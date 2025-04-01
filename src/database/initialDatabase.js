@@ -1,11 +1,11 @@
-const createAdminsTable = require('../database/models/adminsModel');
-const {createUsersTable} = require('../database/models/usersModel')
-const {createListsTable} = require('../database/models/listsModel');
-const {createTasksTable} = require('../database/models/tasksModel');
-const seedAdmin = require('../database/seeders/adminSeed');
-const seedUser = require('../database/seeders/userSeed');
-const seedList = require('../database/seeders/listSeed');
-const seedTask = require('../database/seeders/taskSeed');
+const createAdminsTable  = require('./models/adminsModel');
+const {createUsersTable} = require('./models/usersModel')
+const {createListsTable} = require('./models/listsModel');
+const {createTasksTable} = require('./models/tasksModel');
+const seedAdmin = require('./seeders/adminSeed');
+const seedUser = require('./seeders/userSeed');
+const seedList = require('./seeders/ListSeed');
+const seedTask = require('./seeders/taskSeed');
 
 const initializeDatabase = async () => {
    try {
