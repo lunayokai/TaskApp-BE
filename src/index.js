@@ -11,7 +11,7 @@ const DevName = process.env.DEV_NAME
 
 
 async function dotEnvConnection() {
-    adminName ?
+    DevName ?
      console.log(`${DevName} esta desarrollando esta aplicacion`) :
       console.log("Nadie esta manejando esta aplicacion y probablemente haya errores.")
 }
