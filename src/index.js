@@ -5,14 +5,14 @@ const { initializeDatabase } = require('../src/database/initialDatabase');
 
 const port = process.env.PORT
 const urlBase = process.env.BASE_URL
-const adminName = process.env.ADMIN_NAME
+const DevName = process.env.DEV_NAME
 
 
 
 
 async function dotEnvConnection() {
     adminName ?
-     console.log(`${adminName} esta desarrollando esta aplicacion`) :
+     console.log(`${DevName} esta desarrollando esta aplicacion`) :
       console.log("Nadie esta manejando esta aplicacion y probablemente haya errores.")
 }
 
