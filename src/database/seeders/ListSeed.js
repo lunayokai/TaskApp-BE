@@ -6,7 +6,6 @@ const seedUser = async () => {
     const listTitle = "Tareas";
     const listUserId = 1;
     
-
     const [lists] = await pool.query('SELECT * FROM lists');
           
     if (lists.length === 0) {
@@ -24,3 +23,5 @@ const seedUser = async () => {
 };
 
 module.exports = seedUser;
+
+//test comment
