@@ -11,7 +11,6 @@ const seedUser = async () => {
 
     const hashedPassword = await bcrypt.hash(userPassword, 10);
 
-    // Verificar si ya existe un usuario en la base de datos
     const [users] = await pool.query('SELECT 1 FROM users LIMIT 1');
 
     if (users.length === 0) {

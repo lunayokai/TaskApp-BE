@@ -10,7 +10,6 @@ const seedTask = async () => {
     const listId = 1;
 ;
 
-    // Verificar si ya existe un usuario en la base de datos
     const [tasks] = await pool.query('SELECT * FROM tasks');
 
     if (tasks.length === 0) {
