@@ -44,5 +44,15 @@ module.exports = {
         try {
         } catch (error) {
         }
-    }
+    },
+    findList: async (req, res) => {
+        try {
+        } catch (error) {
+        }
+    },
+    updateList: async (req, res) => {
+        try {
+        } catch (error) {
+        }
+    },
 };
