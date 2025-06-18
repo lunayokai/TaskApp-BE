@@ -7,6 +7,7 @@ const seedTask = async () => {
     const title = "primer tarea";
     const description = "Descripcion detallada de primer terea";
     const completed = false;
+    const status = "undone"
     const listId = 1;
 ;
 
@@ -14,8 +15,8 @@ const seedTask = async () => {
 
     if (tasks.length === 0) {
       await pool.query(
-        'INSERT INTO tasks (title, description, completed, listId) VALUES (?, ?, ?, ?)', 
-        [title, description, completed, listId]
+        'INSERT INTO tasks (title, description, completed, listId, status) VALUES (?, ?, ?, ?, ?)', 
+        [title, description, completed, listId, status]
       );
       console.log('Tarea sembrada exitosamente.');
     } else {

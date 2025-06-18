@@ -6,7 +6,6 @@ const {
   createUser,
   destroyUserById,
   editUserById,
-  getUserById,
   getUserByPassword,
   getUserByToken,
   logoutUser,

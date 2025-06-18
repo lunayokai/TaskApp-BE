@@ -1,5 +1,3 @@
-Hola Profes, buen dia. Disculpen que no haya podido terminar el proyecto, No llegue a hacer el front end, pero estoy creando un backend bien solido jaja. 
-
 Para iniciar este proyecto vas a necesitar las siguientes variables de entorno:
 
 NODE_ENV=           ejemplo "development" es para establecer el ambiente donde va a ser desplegada la aplicacion.
