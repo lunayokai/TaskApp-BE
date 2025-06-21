@@ -1,0 +1,41 @@
+Para iniciar este proyecto vas a necesitar las siguientes variables de entorno:
+
+NODE_ENV=           ejemplo "development" es para establecer el ambiente donde va a ser desplegada la aplicacion.
+DEV_NAME=           ejemplo "TuNombre" es para saber quien esta trabajando activamente en el proyecto.
+PORT=               ejemplo 3000 Es el puerto elegido para el despliegue en la maquina local
+TOKEN_PASSWORD=     ejemplo "secreto" Es para codificar los JWTokens. utilizados para el acceso de usuarios
+
+ADMIN_NAME=         ejemplo "Admin" Es una capa de seguridad para controlar las variables de entorno y aparte, el admin cumple la funcion de super user y puede eliminar elementos de las bases de datos
+ADMIN_PASSWORD=     ejemplo "Test123" Es tu contraseña. eligela libremente.
+
+URL_BASE=           ejemplo "http://localHost300" Es utilizada para crear hyperbinculos para navegacion del usuario
+
+ Coneccion para mysql2
+DB_PORT=            ejemplo 1234 
+DB_DATABASE=        ejemplo "database_test"
+DB_HOST=            ejemplo "127.0.0.1",
+DB_USERNAME=        ejemplo "root"
+DB_PASSWORD=        ejemplo "Test123"
+
+ Coneccion para nodemailer.    
+HOST_USER=          ejemplo "smtp.gmail.com"
+EMAIL_USER=         ejemplo "TuGmail@gmail.com"
+SMTP_PORT=          ejemplo 465
+EMAIL_PASSWORD=     ejemplo "Test123"
+
+
+
+Paso importante, en index.js de la aplicacion, hay una variable para resetear la base de datos al levantar el servidor. por defecto estara en true. hay que cambiarla a false y guardar el archivo. luego resetear el servidor.
+
+Pueden encontrar el proyecto desplegado en:
+https://taskapp-be.onrender.com
+
+
+Rutas accesibles
+
+api/users/register
+api/users/confirm
+api/users/login
+
+
+
